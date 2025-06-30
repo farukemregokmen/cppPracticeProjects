@@ -2,18 +2,19 @@
 using namespace std;
 
 int main(){
-    int notlar[4], ortalama = 0;
-    for (int i = 0; i < 4; i++)
+    const int size = 4;
+    int notlar[size], ortalama = 0;
+    for (int i = 0; i < size; i++)
     {
         cout << i+1 << ". notunuzu girin: ";
         cin >> notlar[i];
     }
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < size; i++)
     {
         ortalama += notlar[i];
         if (i == 3)
         {
-            ortalama = ortalama/4;
+            ortalama = ortalama/size;
             cout << "Ortalamaniz: " << ortalama;
         }   
     }
